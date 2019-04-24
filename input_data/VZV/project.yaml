@@ -1,0 +1,25 @@
+project: HiCoNet_test_VZV
+data_from: Shuzhao Li
+source_id: vax005
+retrieved_data: 2019-3-14
+
+
+# Each data type in a project = a Society
+# society name needs to be unique!
+# observation is related to samples, subjects, treatment, time point, etc.
+# data matrix using convention of features x observations !!!
+
+societies:
+- name: cytokines
+  datatype: cytokine
+  file_data_matrix: 'cytokine__data_matrix.txt'
+  file_feature_annotation: ''
+  file_observation_annotation: 'cytokine__observation_annotation.txt'
+  file_unstructured: ''
+
+- name: metabolites
+  datatype: metabolomics
+  file_data_matrix: 'metabolomics_data_matrix_pos.txt'
+  file_feature_annotation: 'metabolomics_feature_annotation.txt'
+  file_observation_annotation: 'metabo_observation_annotation.txt'
+  file_unstructured: ''
